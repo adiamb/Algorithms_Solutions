@@ -3,8 +3,8 @@ def decompress(Str, Ind):
 	i = Ind
 	Sub = ''
 	CurStr = ''
-	while i < len(Str):
-		if Str[i].isdigit():
+	while i < len(Str): ## base case exit 
+		if Str[i].isdigit(): ### add the digit
 			Sub += Str[i]
 		elif Str[i].isalpha(): 
 			CurStr += Str[i]
